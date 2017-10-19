@@ -171,7 +171,7 @@
     </div>
   </div>
   <p>6. You rarely do something just out of sheer curiosity.</p>
-    <div id="rb-5" class="rb">
+    <div id="rb-6" class="rb">
       <div class="rb-tab" data-value="4">
         <div class="rb-spot">
           <span class="rb-txt">4</span>
@@ -195,7 +195,7 @@
       </div>
     </div>
     <p>7. Being organized is more important to you than being adaptable.</p>
-    <div id="rb-5" class="rb">
+    <div id="rb-7" class="rb">
       <div class="rb-tab" data-value="4">
         <div class="rb-spot">
           <span class="rb-txt">4</span>
@@ -219,7 +219,7 @@
       </div>
     </div>
     <p>8. You are usually highly motivated and energetic.</p>
-    <div id="rb-5" class="rb">
+    <div id="rb-8" class="rb">
       <div class="rb-tab" data-value="4">
         <div class="rb-spot">
           <span class="rb-txt">4</span>
@@ -243,7 +243,7 @@
       </div>
     </div>
     <p>9. Winning a debate matters less to you than making sure no one gets upset.</p>
-    <div id="rb-5" class="rb">
+    <div id="rb-9" class="rb">
       <div class="rb-tab" data-value="4">
         <div class="rb-spot">
           <span class="rb-txt">4</span>
@@ -267,7 +267,7 @@
       </div>
     </div>
     <p>10. You often feel as if you have to justify yourself to other people.</p>
-    <div id="rb-5" class="rb">
+    <div id="rb-10" class="rb">
       <div class="rb-tab" data-value="4">
         <div class="rb-spot">
           <span class="rb-txt">4</span>
@@ -299,6 +299,29 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
     <script src="js/index.js"></script>
+    <script type="text/javascript">
+      
+      $(".submit").on("click", function(event){
+        event.preventDefault();
+
+        var userInput = {
+          name: $("#name").val().trim(),
+          profilePic: $("#url").val().trim(),
+          scores: [
+          $("#rb-1").val().trim(),
+          $("#rb-2").val().trim(),
+          $("#rb-3").val().trim(),
+          $("#rb-4").val().trim(),
+          $("#rb-5").val().trim(),
+          $("#rb-6").val().trim(),
+          $("#rb-7").val().trim(),
+          $("#rb-8").val().trim(),
+          $("#rb-9").val().trim(),
+          $("#rb-10").val().trim()
+          ]
+        }
+      })
+    </script>
 
 </body>
 </html>

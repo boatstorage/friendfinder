@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+</head>
+<body>
+	<div class="container">
+		<h2>Survey Questions</h2>
+		<hr>
+		<form>
+	  <div class="form-group">
+	    <label for="exampleFormControlInput1">Name</label>
+	    <input type="email" class="form-control" id="name" placeholder="required">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleFormControlInput1">Link to photo image</label>
+	    <input type="email" class="form-control" id="url" placeholder="url required">
+	  </div>
+	  <hr>
+	  <div class="form-group">
+	    <label for="exampleFormControlSelect1">Q1.</label>
+	    <p>blah blah blah</p>
+	    <select class="form-control" id="Q1">
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	   <div class="form-group">
+	    <label for="exampleFormControlSelect1">Q2.</label>
+	    <p>blah blah blah</p>
+	    <select class="form-control" id="Q2">
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleFormControlSelect1">Q3.</label>
+	    <p>blah blah blah</p>
+	    <select class="form-control" id="Q3">
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleFormControlSelect1">Q4.</label>
+	    <p>blah blah blah</p>
+	    <select class="form-control" id="Q4">
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	   <div class="form-group">
+	    <label for="exampleFormControlSelect1">Q5.</label>
+	    <p>blah blah blah</p>
+	    <select class="form-control" id="Q5">
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	   <div class="form-group">
+	    <label for="exampleFormControlSelect1">Q6.</label>
+	    <p>blah blah blah</p>
+	    <select class="form-control" id="Q6">
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	   <div class="form-group">
+	    <label for="exampleFormControlSelect1">Q7.</label>
+	    <p>blah blah blah</p>
+	    <select class="form-control" id="Q7">
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	   <div class="form-group">
+	    <label for="exampleFormControlSelect1">Q8.</label>
+	    <p>blah blah blah</p>
+	    <select class="form-control" id="Q8">
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	   <div class="form-group">
+	    <label for="exampleFormControlSelect1">Q9.</label>
+	    <p>blah blah blah</p>
+	    <select class="form-control" id="Q9">
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	   <div class="form-group">
+	    <label for="exampleFormControlSelect1">Q10.</label>
+	    <p>blah blah blah</p>
+	    <select class="form-control" id="Q10">
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	  <button type="submit" class="btn btn-info btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+ Submit</button>
+	</form>
+</div>
+	 <script type="text/javascript">
+	$("#submit").on("click", function(event){
+        event.preventDefault();
+
+        var userInput = {
+          name: $("#name").val().trim(),
+          profilePic: $("#url").val().trim(),
+          scores: [
+          $("#Q1").val().trim(),
+          $("#Q2").val().trim(),
+          $("#Q3").val().trim(),
+          $("#Q4").val().trim(),
+          $("#Q5").val().trim(),
+          $("#Q6").val().trim(),
+          $("#Q7").val().trim(),
+          $("#Q8").val().trim(),
+          $("#Q9").val().trim(),
+          $("#Q10").val().trim()
+          ]
+        };
+        console.log(userInput);
+      })
+	
+</script>
+</body>
+</html>

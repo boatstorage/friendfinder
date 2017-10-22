@@ -36,7 +36,7 @@ module.exports = function(app) {
 
 		friendData.push(userInput);
 
-		res.json()
+		res.json({matchName: matchName, matchUrl: matchUrl});
 
 	})
 }
